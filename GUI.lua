@@ -1,4 +1,4 @@
-return function(GameName)
+
 	if game:GetService("CoreGui"):FindFirstChild(GameName) then
 		return nil
 	end
@@ -55,5 +55,5 @@ return function(GameName)
 	TitleText.TextWrapped = true
 	TitleText.TextXAlignment = Enum.TextXAlignment.Left
 	
-	return Input
-end
+	return {Input=Input, Title=TitleText}
+
