@@ -4,7 +4,7 @@ local Games = {
 }
 local PlaceId = game.PlaceId
 if Games[PlaceId] then 
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/dalloc2/Hub/main/Scripts/"..Games[PlaceId]..".lua"))()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/dalloc2/Hub/main/Scripts/"..Games[PlaceId]..".lua"), true)()
 else
   warn("you on a unsupported game mudafucka")
 end 
